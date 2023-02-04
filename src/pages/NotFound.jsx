@@ -45,7 +45,7 @@ export default function NotFound() {
           px={2}
           color="#FF597B"
           sx={{
-            display: { xs: "none", sm: "block", lg:"none" },
+            display: { xs: "none", sm: "block", lg: "none" },
             textShadow: "1px 1px 2px black",
           }}
         >
@@ -63,7 +63,7 @@ export default function NotFound() {
         >
           El sitio que buscas ya fue devorado, intenta probar uno de estos:
         </Typography>
-        <Box sx={{display:"flex", gap:"1em", justifyContent:"center"}}>
+        <Box sx={{ display: "flex", gap: "1em", justifyContent: "center" }}>
           <Link to="/home">Volver a Home</Link>
           <Link to="/contact">Volver a Contacto</Link>
         </Box>

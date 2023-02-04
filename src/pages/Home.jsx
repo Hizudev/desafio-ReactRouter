@@ -31,7 +31,7 @@ export default function Home() {
         px={2}
         color="#FF597B"
         sx={{
-          display: { xs: "none", sm:"block"},
+          display: { xs: "none", sm: "block" },
           textShadow: "1px 1px 2px black",
         }}
       >

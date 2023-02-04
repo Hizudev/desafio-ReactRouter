@@ -9,7 +9,10 @@ export default function Contact() {
         align="center"
         variant="h1"
         color="#FF597B"
-        sx={{ textShadow: "1px 1px 2px black", display:{xs:"none", md:"block"} }}
+        sx={{
+          textShadow: "1px 1px 2px black",
+          display: { xs: "none", md: "block" },
+        }}
       >
         Comunícate con nosotros!
       </Typography>
@@ -17,7 +20,10 @@ export default function Contact() {
         align="center"
         variant="h3"
         color="#FF597B"
-        sx={{ textShadow: "1px 1px 2px black", display:{xs:"block", md:"none"} }}
+        sx={{
+          textShadow: "1px 1px 2px black",
+          display: { xs: "block", md: "none" },
+        }}
       >
         Comunícate con nosotros!
       </Typography>
@@ -40,7 +46,11 @@ export default function Contact() {
             Correo
           </Typography>
           <input type="email" />
-          <Button variant="contained" color="secondary" sx={{width:"20%", marginTop:"2em"}}>
+          <Button
+            variant="contained"
+            color="secondary"
+            sx={{ width: "20%", marginTop: "2em" }}
+          >
             enviar
           </Button>
         </form>

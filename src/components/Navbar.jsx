@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 import { Button } from "@mui/material";
 import { NavLink } from "react-router-dom";
-import logoP from '../assets/imgs/logoP.png';
+import logoP from "../assets/imgs/logoP.png";
 
 const pages = ["Home", "Contact"];
 
@@ -28,24 +28,31 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "#F9B5D0" }}>
       <Container maxWidth="xl">
-        <Toolbar sx={{display:"flex", justifyContent:"space-between" }} disableGutters>
+        <Toolbar
+          sx={{ display: "flex", justifyContent: "space-between" }}
+          disableGutters
+        >
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                sx={{color: "white", display: "block" }}
+                sx={{ color: "white", display: "block" }}
                 to={`/${page}`}
                 component={NavLink}
               >
-                <Typography sx={{color:"#FF597B", textShadow: "1px 1px 1px black"}}>{page}</Typography>
+                <Typography
+                  sx={{ color: "#FF597B", textShadow: "1px 1px 1px black" }}
+                >
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>
           <Box
             sx={{
-              flexGrow:1,
+              flexGrow: 1,
               display: "flex",
-              justifyContent:"end"
+              justifyContent: "end",
             }}
           >
             <Typography
@@ -60,13 +67,18 @@ function ResponsiveAppBar() {
                 letterSpacing: ".3rem",
                 color: "#FF597B",
                 textDecoration: "none",
-                textShadow: "1px 1px 2px white"
+                textShadow: "1px 1px 2px white",
               }}
             >
-              <img src={logoP} width="40" alt="" />Happy Cake
+              <img src={logoP} width="40" alt="" />
+              Happy Cake
             </Typography>
             <Box
-              sx={{ flexGrow:1, display: { xs: "flex", md: "none" }, justifyContent:"space-between" }}
+              sx={{
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+                justifyContent: "space-between",
+              }}
             >
               <IconButton
                 size="large"
@@ -74,7 +86,7 @@ function ResponsiveAppBar() {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                sx={{color:"#FF597B"}}
+                sx={{ color: "#FF597B" }}
               >
                 <MenuIcon />
               </IconButton>
@@ -90,10 +102,11 @@ function ResponsiveAppBar() {
                   letterSpacing: ".3rem",
                   color: "#FF597B",
                   textDecoration: "none",
-                  textShadow: "1px 1px 2px black"
+                  textShadow: "1px 1px 2px black",
                 }}
               >
-                <img src={logoP} height="40" alt="" />Happy Cake
+                <img src={logoP} height="40" alt="" />
+                Happy Cake
               </Typography>
               <Menu
                 id="menu-appbar"
